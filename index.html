@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Marco Lara </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiance">Experiance</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Marco Lara </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experiance"  onclick="toggleMenu()">Experiance</a></li>
+                
+                <li><a href="#project"  onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Marco Lara profile picture"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I am </p>
+            <h1 class="title"> Marco Lara</h1>
+            <p class="section_text_p2"> Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/marco_lara_resume.pdf')"
+                >Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+              </button>
+            </div>
+            <div id="social-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/marco-lara-99ba09152'" 
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My github profile"
+                class="icon"
+                onclick="location.href='https://github.com/MLara20'" 
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about"> 
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section_pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experiance-icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>1 year <br />Fullstack Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p> Bachelor of Computer Science - Game Development<br />Certificate in Business Management - Entrepreneurship C1</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Hi my name is Marco Lara, and I am passionate about software engineering,
+                 game development, and Artificial intelligence. I believe in a lifelong learning and 
+                 I am constanly seeking out new challenges to broaden my skills and knowledge in the field.
+                 Currently I am on my last semeter of college, and cannot wait to gain professional job experiance.                
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experiance'"
+        />
+      </section>
+    <section id="experiance">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title"> Experiance</h1>
+        <div class="experiance-details-container">
+            <div class="about-containers">
+                <div class="details-container"> 
+                        <h2 class="experiance-sub-title"> Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>SublimeText</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>UI</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                    </div>
+                </div>
+                <div class="details-container"> 
+                        <h2 class="experiance-sub-title"> Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Proficient</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Proficient</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Netlify</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experiance icon"
+                             class="icon"
+                            /> 
+                            
+                            <div>
+                                <h3>Git</h3>
+                                <p>Proficient</p>
+                            </div>
+                            </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section_text_p1"> Browse My Work</p>
+        <h1 class="title"> Projects</h1>
+        <div class="experiance-details-container">
+            <div class="about-containers">
+            <div class="details-container color-conatiner">
+                <div class="article-container">
+                    <video width="1080" height="640" controls
+                    src="./assets/project_1.mp4" 
+                    class="project-img"
+                    >
+                </video>
+                </div>
+                <h2 class="experiance-sub-title project-title"> Haunted Forest</h2>
+                <p>Coded in C++ using the GX toolkit library</p>
+            </div>
+            <div class="details-container color-conatiner">
+                <div class="article-container">
+                    <video width="1080" height="640" controls
+                    src="./assets/Spider_Exterminator-Demo.mp4" 
+                    class="project-img"
+                    >
+                </video>
+                </div>
+                <h2 class="experiance-sub-title project-title"> Spider Exterminator Demo</h2>
+                <div class="section_text_p1">
+                    <p> This is an application coded in C++ using Android Studio.
+                        
+                    </p>
+                 </div>
+            </div>
+            <div class="details-container color-conatiner">
+                <div class="article-container">
+                    <img width="1380" height="740" controls
+                    src="./assets/luca-image.png" 
+                    alt="project_3" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experiance-sub-title project-title"> Lamar University Chess Club Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location. 
+                    href= 'https://luchessa.netlify.app/'">
+                    Website
+                    </button>
+                </div>
+                <p> I assisted the LUCA developers in maintaining and updating the website.</p>
+            </div>
+        </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='.#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">marco_0128@live.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/marco-lara-99ba09152">LinkedIn</a></p>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow-up.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='.///#region '"
+        />
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
